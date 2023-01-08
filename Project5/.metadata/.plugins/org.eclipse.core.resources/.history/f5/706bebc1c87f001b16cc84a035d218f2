@@ -1,0 +1,74 @@
+
+public class Project5 {
+
+	public static void main (String [] args)
+	{
+		/*int tokenAmount;
+		System.out.print("Your spin was" + " ");
+		int num1 = (int)(Math.random()*10)+1;
+		int num2 = (int)(Math.random()*10)+1;
+		int num3 = (int)(Math.random()*10)+1;
+
+		System.out.print(num1 + " ");
+		System.out.print(num2 + " ");
+		System.out.print(num3 + " ");
+		System.out.println();
+		if(num1==num2 && num2 == num3)
+		{
+			 tokenAmount = 50;
+			
+			if (num1 == 7)
+			{
+				tokenAmount = 500;
+			}
+			
+		}
+		else if (num1 == num2 || num2 == num3)
+		{
+			tokenAmount = 3;
+			if (num1 == 7)
+			{
+				tokenAmount = 15;
+			}
+		}
+		else if (num1 == num3)
+		{
+			tokenAmount = 3;
+			if (num3 == 7)
+			{
+				tokenAmount = 15;
+			}
+		}
+		
+		
+		else 
+			{tokenAmount =-1;}
+		
+		System.out.println("You earned " + tokenAmount + " points.");
+	*/
+		/*int accum = 260;
+		int count = 1;
+		while(count <= 4)
+		{
+			count = count +1;
+			accum = accum / count;
+			System.out.println(accum + " " + count);
+		}*/
+		/*int accum = 1;
+		int count = 3;
+		while(count != 19)
+		{
+			count = count +3;
+			accum = accum *2;
+			System.out.println(accum + " " + count);
+		}*/
+		double value = 62.1;
+		int count = 0;
+		final double=LOWER_RANGE = 20.0;
+		
+		
+	}
+		
+
+
+}

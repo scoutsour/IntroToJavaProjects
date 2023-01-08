@@ -1,0 +1,94 @@
+import java.util.Scanner;
+public class Project6 {
+	public static void main(String [] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		final int SENTINAL = -1;
+		int data;
+		int currentDial;
+		int previousDial;
+		int posChange = 0;
+		int negChange = 0;
+		int noChange = 0;
+		int numOne = 0;
+		int numTwo = 0;
+		int numThree = 0;
+		int numFour = 0;
+		int numFive = 0;
+
+		
+		System.out.println("Initial setting: 3");
+		currentDial = 3;
+		System.out.println("Enter the next setting (1-5) or -1 to stop.");
+		data = keyboard.nextInt();
+	
+		while(data != SENTINAL)
+		{
+				
+				previousDial = currentDial;
+				currentDial = data;
+				
+				
+				if(previousDial > currentDial)
+				{
+					System.out.println("Negative Change: " + previousDial + " to " + currentDial);
+					negChange++;
+				}
+					
+				else if(previousDial < currentDial)
+				{
+					System.out.println("Positive Change: " + previousDial + " to " + currentDial);
+					posChange++;
+				}
+				else if(previousDial == currentDial)
+				{
+					System.out.println("NO CHANGE");
+					noChange++;
+				}
+				System.out.println("Current Setting: " + currentDial);
+				
+			
+				
+				if(data == 1)
+				{
+					numOne++;
+					
+				}
+				else if(data == 2)
+				{
+					numTwo++;
+				}
+				else if(data == 3)
+				{
+					numThree++;
+				}
+				else if(data == 4)
+				{
+					numFour++;
+				}
+				else if(data == 5)
+				{
+					numFive++;
+				}
+				
+				
+				System.out.println("Enter the next setting (1-5) or -1 to stop.");
+				data = keyboard.nextInt();
+				
+		}
+		
+		System.out.println("1 was chosen " + numOne + " time(s).");
+		System.out.println("2 was chosen " + numTwo + " time(s).");
+		System.out.println("3 was chosen " + numThree + " time(s).");
+		System.out.println("4 was chosen " + numFour + " time(s).");
+		System.out.println(" 5 was chosen" + numFive + " time(s).");
+		
+	
+		System.out.println("Positve Changes: " + posChange);
+		System.out.println("Negative Changes: " + negChange);
+		System.out.println("No Changes: " + noChange);
+		
+		
+		keyboard.close();
+	}
+}

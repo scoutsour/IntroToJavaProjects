@@ -1,0 +1,13 @@
+import java.text.DecimalFormat;
+public class Project13 {
+	public static void main(String[] args)
+	{
+		 
+		Triangle shape = new Triangle(5,5,5);
+		System.out.println("The three sides of the legal triangle are:" + shape.getSideA() + " " + shape.getSideB() + " " + shape.getSideC());
+	
+	}
+
+
+
+}

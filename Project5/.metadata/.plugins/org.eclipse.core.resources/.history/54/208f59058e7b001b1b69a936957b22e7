@@ -1,0 +1,14 @@
+
+public class Project5 {
+
+	public static void main (String [] args)
+	{
+		System.out.println("Run #1");
+		double num1 = Math.random();
+		double num2 = Math.random();
+		double num3 = Math.random();
+		System.out.println(num1);
+	}
+
+
+}

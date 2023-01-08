@@ -1,0 +1,51 @@
+
+public class Project5 {
+
+	public static void main (String [] args)
+	{
+		int tokenAmount;
+		System.out.println("Run #1");
+		int num1 = (int)(Math.random()*10)+1;
+		int num2 = (int)(Math.random()*10)+1;
+		int num3 = (int)(Math.random()*10)+1;
+
+		System.out.println(num1);
+		System.out.println(num2);
+		System.out.println(num3);
+		
+		if(num1==num2 && num2 == num3)
+		{
+			 tokenAmount = 50;
+			
+			if (num1 == 7)
+			{
+				tokenAmount = 500;
+			}
+			
+		}
+		else if (num1 == num2 || num2 == num3)
+		{
+			tokenAmount = 3;
+			if (num1 == 7)
+			{
+				tokenAmount = 15;
+			}
+		}
+		else if (num1 == num3)
+		{
+			tokenAmount = 3;
+			if (num3 == 7)
+			{
+				tokenAmount = 15;
+			}
+		}
+		
+		
+		else 
+			{tokenAmount =-1;}
+		
+		System.out.println("Your token amount is now: " + tokenAmount);
+	}
+
+
+}

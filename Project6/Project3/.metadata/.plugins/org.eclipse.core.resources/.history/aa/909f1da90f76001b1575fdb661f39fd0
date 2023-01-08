@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Project3 {
+
+	public static void main (String[] args)
+	
+	{
+		Scanner keyboard = new Scanner (System.in);
+		int sum = 0;
+		
+		
+		System.out.println("Please answer yes or no to the following questions, press enter after each response");
+		System.out.println("do you find yourself less eager to go back to work or to resume my chores after a weekend?");
+		String str1;
+		str1 = keyboard.nextLine();
+		if(str1.equalsIgnoreCase("Yes"))
+		{
+			sum=+1;
+		}
+		System.out.println("do you feel less and less patient and/or sympathetic listening to other people’s problems");
+		str1 = keyboard.nextLine();
+		if(str1.equalsIgnoreCase("Yes"))
+				{
+					sum=+1;
+				}
+		keyboard.close();
+	}
+	
+}

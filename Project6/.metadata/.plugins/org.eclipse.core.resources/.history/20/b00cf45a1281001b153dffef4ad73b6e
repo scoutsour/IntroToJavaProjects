@@ -1,0 +1,58 @@
+import java.util.Scanner;
+public class Project6 {
+	public static void main(String [] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		final int SENTINAL = -1;
+		int data;
+		int currentDial;
+		int previousDial;
+		int posChange = 0;
+		int negChange = 0;
+		int noChange = 0;
+		
+		
+		System.out.println("Initial setting: 3");
+		currentDial = 3;
+		System.out.println("Enter the next setting (1-5) or -1 to stop.");
+		data = keyboard.nextInt();
+	
+		while(data != SENTINAL)
+		{
+				previousDial = currentDial;
+				currentDial = data;
+				
+				
+				if(previousDial > currentDial)
+				{
+					System.out.println("Negative Change: " + previousDial + " to " + currentDial);
+					negChange++;
+				}
+					
+				else if(previousDial < currentDial)
+				{
+					System.out.println("Positive Change: " + previousDial + " to " + currentDial);
+					posChange++;
+				}
+				else if(previousDial == currentDial)
+				{
+					System.out.println("NO CHANGE");
+					noChange++;
+				}
+				System.out.println("Current Setting: " + currentDial);
+				
+				
+				System.out.println("Enter the next setting (1-5) or -1 to stop.");
+				data = keyboard.nextInt();
+				
+		}
+		
+	
+		System.out.print("Positve Changes: " + posChange);
+		System.out.print("Negative Changes: " + negChange);
+		System.out.print("No Changes: " + noChange);
+		
+		
+		keyboard.close();
+	}
+}
