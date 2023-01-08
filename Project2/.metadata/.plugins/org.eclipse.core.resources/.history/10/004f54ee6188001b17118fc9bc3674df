@@ -1,0 +1,65 @@
+// Nick Rodriguez 
+//import java.lang.Math;
+//import java.util.Scanner;
+public class Project2 {
+	
+	public static void main (String [] args )
+	{
+		/*String bookAuthor = "Bi Feiyu";
+		String bookAuthor2 = "Toni Morrison";
+		String bookAuthor3 = "Chip Livingston";*/
+		
+		/*String bookTitle = "Three Sisters";
+		String bookTitle2 = "Song of Solomon";
+		String bookTitle3 = "Owls Don't Have to Mean Death";*/
+		
+	/*	double bookCost = 18.99;
+		double bookCost2 = 11.99;
+		double bookCost3 = 80.50;
+				
+		int numberOfCopies = 2;
+		int numberOfCopies2 = 4;
+		int numberOfCopies3 = 1;
+		double taxRate = .0875;
+		
+	
+		double totalBeforeTax = ((numberOfCopies * bookCost) + (numberOfCopies2 * bookCost2) + (numberOfCopies3 * bookCost3));
+		double salesTax = totalBeforeTax * taxRate;
+		double roundedSalesTax = Math.round(salesTax*100.0)/100.0;
+		double total = salesTax + totalBeforeTax;
+	//	double roundedTotal = Math.round(total*100.0)/100.0;
+		
+		System.out.println("Purchase 2 copies of Three Sisters, Bi Feiyu. Each copy costs $18.99.");
+		System.out.println("Purchase 4 copies of Song of Solomon, Toni Morrison. Each copy costs $11.99.");
+		System.out.println("Purchase 1 copy of Owls Don't Have to Mean Death, Chip Livingston. Each copy costs $80.50.");
+		System.out.println("Total before tax: $" + totalBeforeTax );
+		System.out.println("Sales tax: $" + roundedSalesTax);
+		System.out.println("The total cost of your order will be $" + String.format("%.2f", total));
+		*/
+		
+	/*	double value1, value2, value3;
+		value1 = 5;
+		value2 = 5;
+		value3 = 3;
+		double largest;
+		if (value1 > value2) 
+		 { if (value1 > value3) { largest = value1; } else { largest = value3; } } 
+		
+		else if (value2 > value1) { if (value2 > value3) { largest = value2; } else { largest = value3; } } 
+		else { largest = value3; } 
+		System.out.println(largest);
+
+	
+//	keyboard.close();*/
+
+
+		int sum = 0;
+		for (int count = 0; sum < 0; ++count)
+		{
+		sum = sum - count;
+
+		}
+		System.out.println("Sum: " + sum + "count: " + count);
+		
+	}
+}
